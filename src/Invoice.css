@@ -12,12 +12,14 @@
 
 .invoice-label {
     display: block;
-    margin: 10px 0;
+    margin-bottom: 5px;
 }
 
-.invoice-input {
-    width: 100%;
+.invoice-input,
+.invoice-textarea {
+    width: calc(100% - 16px);
     padding: 8px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
@@ -32,4 +34,37 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+}
+
+/* Additional styling to address spacing */
+.invoice-label:first-child {
+    margin-top: 0;
+}
+
+.invoice-input:first-child,
+.invoice-textarea:first-child {
+    margin-top: 0;
+}
+
+.invoice-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.invoice-input,
+.invoice-textarea,
+.invoice-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.invoice-textarea {
+    min-height: 80px;
+}
+
+.invoice-button {
+    /* ... existing styles ... */
 }
